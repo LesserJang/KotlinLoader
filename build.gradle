@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'ru.endlesscode.bukkitgradle' version '0.8.2'
+}
+
+group 'com.jih10157'
+description 'Use this! If you use Kotlin.'
+version '1.0-RELEASE'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly bukkit()
+}
+bukkit {
+    meta {
+        name = 'KotlinLoader'
+        main = 'com.jih10157.KotlinLoader.Main'
+        authors = ['Uni_Lesser']
+    }
+}
