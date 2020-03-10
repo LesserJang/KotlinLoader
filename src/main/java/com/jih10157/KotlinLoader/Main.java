@@ -12,11 +12,12 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
 public class Main extends JavaPlugin {
-    private final static String KOTLIN_VERSION = "1.3.61";
     public Main() {
         loadKotlin();
     }
     public void loadKotlin() {
+        saveDefaultConfig();
+        String KOTLIN_VERSION = getConfig().getString("kotlin_version");
         getLogger().info("Loading kotlin library...");
         getLogger().info("kotlin library version: "+KOTLIN_VERSION);
         long l = System.currentTimeMillis();

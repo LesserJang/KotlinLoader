@@ -5,7 +5,7 @@ plugins {
 
 group 'com.jih10157'
 description 'Use this! If you use Kotlin.'
-version '1.0-RELEASE'
+version '1.1-RELEASE'
 
 sourceCompatibility = 1.8
 
